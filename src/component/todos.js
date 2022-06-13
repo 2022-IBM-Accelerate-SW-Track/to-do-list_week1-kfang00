@@ -14,11 +14,11 @@ const Todos = ({ todos }) => {
       todos.map((todo) => {
         return (
           <Grid key={todo.id}>
-            <Card>
+            <Card style={{ color: "#ff8cbe", padding: "10px 0px", margin: "10px", borderRadius: "20px" }}>
               {/* Remember, we set the local state of this todo item when the user submits the form in 
               AddTodo.js. All we need to do is return the todo list item */}
               <CardContent>
-                <span style={{ padding: "50px" }}>{todo.content}</span>
+                <span style={{ padding: "50px", fontWeight: "400" }}>{todo.content}</span>
               </CardContent>
             </Card>
           </Grid>

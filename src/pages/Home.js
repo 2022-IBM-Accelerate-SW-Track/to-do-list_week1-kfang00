@@ -30,7 +30,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <h1>Todo's</h1>
+        <h1 style = {{paddingTop: "20px", letterSpacing: "0.05em"}} >Todo's</h1>
         <Todos todos = {this.state.todos} />
         <AddTodo addTodo = {this.addTodo} />
       </div>
